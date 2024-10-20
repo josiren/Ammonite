@@ -1,43 +1,45 @@
 # Project Description
 
-This project showcases exclusive building materials through a curated collection of examples and case studies. It highlights innovative applications of these materials in various construction projects, demonstrating their unique features and benefits.
+This project showcases exclusive building materials through a curated collection of examples and
+case studies. It highlights innovative applications of these materials in various construction
+projects, demonstrating their unique features and benefits.
 
-## Getting Started
+# Project Stack
 
-To begin working on this project, run the development server using one of the following commands:
+This project leverages a modern tech stack designed to enhance performance, maintainability, and
+user experience. Below is the breakdown of each technology used in the project:
 
-```bash
-# for start in dev (HTTP PROTOCOL)
-npm run dev
+## Frontend Technologies
 
-# or
+### React
 
-# for start in dev (HTTPS PROTOCOL)
-npm run dev::https
-# or
+- **Purpose**: A JavaScript library for building user interfaces.
+- **Usage**: Enables the creation of reusable UI components, making the development process more
+  efficient.
 
-yarn dev
-# or
+### Next.js
 
-pnpm dev
-# or
+- **Purpose**: A React framework for server-side rendering and static site generation.
+- **Usage**: Provides routing, API routes, and optimization features out of the box, enhancing SEO
+  and performance.
 
-bun dev
-```
+### Styled-Components
 
-## Project access
+- **Purpose**: A library for writing CSS in JavaScript.
+- **Usage**: Allows for component-level styling, making it easier to manage styles in a modular way
+  while leveraging the full power of CSS.
 
-Once the server is running, you can view the project by navigating to
+### Tailwind CSS
 
-```bash
-http://192.168.1.32:3000
-#or
-https://192.168.1.32:3000
-```
+- **Purpose**: A utility-first CSS framework.
+- **Usage**: Facilitates rapid UI development by providing predefined utility classes that can be
+  composed to create complex designs without leaving your HTML.
 
-in your web browser.
+## Architectural Pattern
 
-## Content customization
+### FSD (Feature-Sliced Design)
 
-You can customize the content by editing app/page.tsx, and changes will reflect immediately in your browser.
-This project utilizes next/font to optimize and load the Geist font family, enhancing the visual appeal of the site.
+- **Purpose**: An architectural approach that emphasizes feature-driven development.
+- **Usage**: Organizes code into features rather than technical layers, improving scalability and
+  maintainability. Each feature contains its own components, styles, and logic, promoting separation
+  of concerns.
