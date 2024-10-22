@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { motion } from 'framer-motion';
+
 import { Fonts } from '@/shared/ui/styles/fonts';
 
 import 'swiper/css';
@@ -31,19 +33,19 @@ export const Swiper = styled(SwiperContainer)`
 `;
 
 interface SwiperSlideProps {
-  isLastSlide?: boolean;
+  islastslide?: boolean;
 }
 
 export const SwiperSlide = styled(SwiperSlideItem)<SwiperSlideProps>`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-width: ${e => (e.isLastSlide ? '100%' : '25.573vw')};
-  max-width: ${e => (e.isLastSlide ? '100%' : '25.573vw')};
+  min-width: ${e => (e.islastslide ? '100%' : '25.573vw')};
+  max-width: ${e => (e.islastslide ? '100%' : '25.573vw')};
   gap: 30px;
 `;
 
-export const SwiperSlideBox = styled.div`
+export const SwiperSlideBox = styled(motion.div)`
   border: 1px solid white;
   border-radius: 41.54px;
   height: 100%;
@@ -55,6 +57,4 @@ export const SwiperSlideText = styled.h3`
   font-size: 0.978vw;
   font-family: ${inter.style.fontFamily};
   text-transform: uppercase;
-  max-width: 60%;
-  margin: 0 auto;
 `;
