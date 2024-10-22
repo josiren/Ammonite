@@ -57,7 +57,7 @@ export const SwiperComponent = () => {
                 transition={{
                   type: 'tween',
                   ease: 'easeIn',
-                  delay: 0.2,
+                  delay: 0.3,
                   duration: 0.5 * (index + 1),
                 }}
                 style={{
