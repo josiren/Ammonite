@@ -12,6 +12,10 @@ export const AboutText = styled(motion.div)`
   font-size: 5.208vw;
   font-family: ${inter.style.fontFamily};
   letter-spacing: 3px;
+
+  @media (width <= 1024px) {
+    font-size: 40px;
+  }
 `;
 
 export const AboutTextBlock = styled(motion.div)`
@@ -20,7 +24,14 @@ export const AboutTextBlock = styled(motion.div)`
   padding: 39px 15px 72px 23px;
   border-radius: 38px;
   margin-right: 42px;
-  font-family: ${inter.style.fontFamily};
-  font-size: 1.3141vw;
-  line-height: 31px;
+
+  p {
+    font-family: ${inter.style.fontFamily};
+    font-size: 1.3141vw;
+    line-height: 31px;
+
+    @media (width <= 1024px) {
+      font-size: 16px;
+    }
+  }
 `;
