@@ -1,10 +1,7 @@
 'use client';
 
+import { AboutPage } from '@/app-pages';
+
 export const Home = () => {
-  return (
-    <>
-      <h1>Home</h1>
-      <h2>Hello</h2>
-    </>
-  );
+  return <AboutPage />;
 };
